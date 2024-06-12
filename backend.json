@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "id": 2,
-      "title": "999",
-      "info": "Product info",
-      "price": 1000,
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlu-5sicFuHii8BAVf-lwWzS0D4bOJ00mHAQ&s"
-    },
-    {
       "id": 3,
       "title": "3 product",
       "info": "Product info",

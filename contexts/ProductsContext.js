@@ -1,10 +1,9 @@
 import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
-import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
 export const productsContext = createContext();
 
-const API = "http://192.168.0.47:8000/products";
+const API = "http://192.168.0.51:8001/products";
 
 const INIT_STATE = {
   products: [],
@@ -22,7 +21,6 @@ const reducer = (state, action) => {
 
 export default function ProductsContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  console.log("state: ", state);
 
   async function getProducts() {
     const res = await axios(API);
